@@ -9,5 +9,6 @@ LazyData: TRUE
 Depends:
     tidyverse,
     car,
-    instvy
+    instvy,
+    shiny
 RoxygenNote: 6.0.1
