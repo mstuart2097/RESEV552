@@ -1,0 +1,13 @@
+Package: ProjectNFL
+Type: Package
+Title: RESEV 552
+Version: 0.1.0
+Authors@R: person("Matt","Stuart",role=c("aut","cre"),email="mstuart@iastate.edu")
+Description: This is a package to download the PISA 2015 datasets, the required packages and a Shiny App to display all of the variables.
+License: GNU General Public License Version 2
+LazyData: TRUE
+Depends:
+    tidyverse,
+    car,
+    instvy
+RoxygenNote: 6.0.1
