@@ -1,4 +1,4 @@
-Package: ProjectNFL
+Package: RESEV552
 Type: Package
 Title: RESEV 552
 Version: 0.1.0
@@ -9,6 +9,6 @@ LazyData: TRUE
 Depends:
     tidyverse,
     car,
-    instvy,
+    intsvy,
     shiny
 RoxygenNote: 6.1.0
