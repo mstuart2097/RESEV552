@@ -2,7 +2,6 @@
 #' @description This is a Shiny App which describes all of the PISA 2015 datasets
 #'
 #' @return A Shiny App with choices of Dataset, Type of Variable and Specific Variable
-#' @export
 #'
 #' @format Three Shiny Outputs about the Variable Choice for a Specific Dataset
 #' \describe{
@@ -11,6 +10,7 @@
 #' \item{Plot}{A Bar Plot of the 10 Most Popular Repsonses for the Chosen Variable (Histogram if the Variable is Numeric)}
 #' \item{Plot}{A Bar Plot of the 10 Most Popular Repsonses for the Chosen Variable (Histogram if the Variable is Numeric)}
 #' }
+#' @export
 PISAShinyApp <- function(){
   require(shiny)
   require(tidyverse)
