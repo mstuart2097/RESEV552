@@ -9,37 +9,25 @@
 #'  \item {Type}{Type of Variable}
 #' }
 #' 
-"cog2015.part1"
+"cog2015vars"
 
-#' @rdname Data
-"cog2015.part2"
+#' @rdname DataVars
+"cps2015vars"
 
-#' @rdname Data
-"cog2015.part3"
+#' @rdname DataVars
+"lit2015vars"
 
-#' @rdname Data
-"cog2015.part4"
+#' @rdname DataVars
+"sch2015vars"
 
-#' @rdname Data
-"cps2015"
+#' @rdname DataVars
+"stud2015vars"
 
-#' @rdname Data
-"lit2015"
+#' @rdname DataVars
+"stud2015_2vars"
 
-#' @rdname Data
-"sch2015"
+#' @rdname DataVars
+"tch2015vars"
 
-#' @rdname Data
-"stud2015.part1"
-
-#' @rdname Data
-"stud2015.part2"
-
-#' @rdname Data
-"stud2015_2"
-
-#' @rdname Data
-"tch2015"
-
-#' @rdname Data
-"tim2015"
+#' @rdname DataVars
+"tim2015vars"
