@@ -140,28 +140,39 @@ PISAShinyApp <- function(){
 
 #' @name PISAData
 #' @title PISA Data
-#'
-#' @description This is a function to download the PISA 2015 Data from the "mstuart2097/RESEV552Data" repository in Github
-#' @return The eight datasets into your personal workspace
-#'
+#' @description This is a function to download a PISA 2015 Dataset from the "mstuart2097/RESEV552Data" repository in Github
+#' @param dataset The dataset you want to download from the "RESEV552Data" repository
+#' @return The specified dataset into your personal workspace
+#' 
 #' @export
-PISAData <- function(){
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QQQ.sav?raw=True"
-  eval(parse(text="stud2015 <- read.spss(url)"))
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QQ2.sav?raw=True"
-  eval(parse(text="stud2015_2 <- read.spss(url)"))
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_SCH_QQQ.sav?raw=True"
-  eval(parse(text="sch2015 <- read.spss(url)"))
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_COG.sav?raw=True"
-  eval(parse(text="cog2015 <- read.spss(url)"))
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QTM.sav?raw=True"
-  eval(parse(text="tim2015 <- read.spss(url)"))
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_TCH_QQQ.sav?raw=True"
-  eval(parse(text="tch2015 <- read.spss(url)"))
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_FLT.sav?raw=True"
-  eval(parse(text="lit2015 <- read.spss(url)"))
-  url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_CPS.sav?raw=True"
-  eval(parse(text="cps2015 <- read.spss(url)"))
+PISAData <- function(dataset){
+  if (dataset == stud2015) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QQQ.sav?raw=True"
+    eval(parse(text="stud2015 <- read.spss(url)"))
+  } else if (dataset == stud2015_2) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QQ2.sav?raw=True"
+    eval(parse(text="stud2015_2 <- read.spss(url)"))
+  } else if (dataset == sch2015) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_SCH_QQQ.sav?raw=True"
+    eval(parse(text="sch2015 <- read.spss(url)"))
+  } else if (dataset == cog2015) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_COG.sav?raw=True"
+    eval(parse(text="cog2015 <- read.spss(url)"))
+  } else if (dataset == tim2015) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QTM.sav?raw=True"
+    eval(parse(text="tim2015 <- read.spss(url)"))
+  } else if (dataset == tch2015) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_TCH_QQQ.sav?raw=True"
+    eval(parse(text="tch2015 <- read.spss(url)"))
+  } else if (dataset == lit2015) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_FLT.sav?raw=True"
+    eval(parse(text="lit2015 <- read.spss(url)"))
+  } else if (dataset == cps2015) {
+    url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_CPS.sav?raw=True"
+    eval(parse(text="cps2015 <- read.spss(url)"))
+  } else {
+    stop("Not a Specified PISA 2015 Dataset")
+  }
 }
 
 

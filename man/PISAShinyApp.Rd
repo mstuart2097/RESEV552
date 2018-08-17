@@ -2,7 +2,7 @@
 % Please edit documentation in R/RESEV552.R
 \name{PISAShinyApp}
 \alias{PISAShinyApp}
-\title{PISAShinyApp}
+\title{PISA Shiny App}
 \format{Three Shiny Outputs about the Variable Choice for a Specific Dataset
 \describe{
 \item{Description}{A Brief Description of the Chosen Variable}

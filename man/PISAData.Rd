@@ -4,11 +4,14 @@
 \alias{PISAData}
 \title{PISA Data}
 \usage{
-PISAData()
+PISAData(dataset)
+}
+\arguments{
+\item{dataset}{The dataset you want to download from the "RESEV552Data" repository}
 }
 \value{
-The eight datasets into your personal workspace
+The specified dataset into your personal workspace
 }
 \description{
-This is a function to download the PISA 2015 Data from the "mstuart2097/RESEV552Data" repository in Github
+This is a function to download a PISA 2015 Dataset from the "mstuart2097/RESEV552Data" repository in Github
 }
