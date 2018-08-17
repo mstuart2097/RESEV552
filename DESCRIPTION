@@ -7,6 +7,7 @@ Description: This is a package to download the PISA 2015 datasets, the required 
 License: GNU General Public License Version 2
 LazyData: TRUE
 Depends:
+    foreign,
     tidyverse,
     car,
     intsvy,
