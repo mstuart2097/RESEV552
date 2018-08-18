@@ -142,6 +142,7 @@ PISAShinyApp <- function(){
 #' @title PISA Data
 #' @description This is a function to download a PISA 2015 Dataset from the "mstuart2097/RESEV552Data" repository in Github
 #' @param dataset The dataset you want to download from the "RESEV552Data" repository
+#' Please note that you need to specify the dataset as the vars file in this package
 #' @return The specified dataset into your personal workspace
 #' 
 #' @export
@@ -175,5 +176,36 @@ PISAData <- function(dataset){
   }
 }
 
+#' @name DataVariables
+#' @title Description of Dataset Variables
+#' @description These are the descriptions of each of the variables for a specific dataset from the PISA 2015 Survey
+#' @format A data frame of 3 Variables
+#' \describe{
+#' \item{Names}{The Name of the Variable}
+#' \item{Description}{A brief Description of the Variable}
+#' \item{Type}{The Type of the Variable (Nominal, Ordinal, Numeric, Ratio)}
+#' }
+#' @source \url{"http://www.oecd.org/pisa/"}
+"stud2015vars"
 
+#' @rdname DataVariables
+"stud2015_2vars"
+
+#' @rdname DataVariables
+"cog2015vars"
+
+#' @rdname DataVariables
+"sch2015vars"
+
+#' @rdname DataVariables
+"tim2015vars"
+
+#' @rdname DataVariables
+"tch2015vars"
+
+#' @rdname DataVariables
+"lit2015vars"
+
+#' @rdname DataVariables
+"cps2015vars"
 

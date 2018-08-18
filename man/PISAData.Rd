@@ -7,7 +7,8 @@
 PISAData(dataset)
 }
 \arguments{
-\item{dataset}{The dataset you want to download from the "RESEV552Data" repository}
+\item{dataset}{The dataset you want to download from the "RESEV552Data" repository
+Please note that you need to specify the dataset as the vars file in this package}
 }
 \value{
 The specified dataset into your personal workspace
