@@ -147,28 +147,28 @@ PISAShinyApp <- function(){
 #' 
 #' @export
 PISAData <- function(dataset){
-  if (dataset == stud2015) {
+  if (dataset == "stud2015") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QQQ.sav?raw=True"
     eval(parse(text="stud2015 <- read.spss(url)"))
-  } else if (dataset == stud2015_2) {
+  } else if (dataset == "stud2015_2") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QQ2.sav?raw=True"
     eval(parse(text="stud2015_2 <- read.spss(url)"))
-  } else if (dataset == sch2015) {
+  } else if (dataset == "sch2015") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_SCH_QQQ.sav?raw=True"
     eval(parse(text="sch2015 <- read.spss(url)"))
-  } else if (dataset == cog2015) {
+  } else if (dataset == "cog2015") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_COG.sav?raw=True"
     eval(parse(text="cog2015 <- read.spss(url)"))
-  } else if (dataset == tim2015) {
+  } else if (dataset == "tim2015") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_QTM.sav?raw=True"
     eval(parse(text="tim2015 <- read.spss(url)"))
-  } else if (dataset == tch2015) {
+  } else if (dataset == "tch2015") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_TCH_QQQ.sav?raw=True"
     eval(parse(text="tch2015 <- read.spss(url)"))
-  } else if (dataset == lit2015) {
+  } else if (dataset == "lit2015") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_FLT.sav?raw=True"
     eval(parse(text="lit2015 <- read.spss(url)"))
-  } else if (dataset == cps2015) {
+  } else if (dataset == "cps2015") {
     url <- "https://github.com/mstuart2097/RESEV552Data/blob/master/data/CY6_MS_CMB_STU_CPS.sav?raw=True"
     eval(parse(text="cps2015 <- read.spss(url)"))
   } else {
