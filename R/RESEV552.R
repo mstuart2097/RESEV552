@@ -174,7 +174,7 @@ PISAData <- function(dataset){
   } else {
     stop("Not a Specified PISA 2015 Dataset")
   }
-  eval(parse(text=text),envir = .GlobalEnv)
+  eval(parse(text=text))
 }
 
 #' @name DataVariables
